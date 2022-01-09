@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <p>Verifique aqui se você está no seu peso ideal</p>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+    <h2 class="título2">Calculando o seu índice de massa corporal</h2>
+    <h3>Instruções:</h3>
+    <article id="instruções">
+        <p>Para usar a calculadora de IMC é muito fácil: basta preencher os campos com o seu peso e sua altura e depois clicar no botão resultado. A resposta aparecerá logo abaixo.<p>Faça um teste agora e descubra se você está no seu peso ideal.</p></p>
+        
+    </article>
+        <div id="calculadora">
+            <div id="dados">
+                <p>Altura</p>
+                <input type="number" id="altura"><br>
+                <p>Peso</p>
+                <input type="number" name="" id="kilo">
+            </div>
+            <a href="#resposta"><input type="button" value="Resultado" id="botão" onclick="operar()"></a>
+        </div>
+        <article id="resposta">
+            <h2 id="titleanswer">Resposta:</h2>
+            <p id="res1"></p>
+            <p id="res2"></p>
+            <h2 id="titleanswer">Seu peso ideal:</h2>
+            <p id="res3"></p>
+        </article>
+    </main>
+    
+
+    </aside>
+    <footer>
+        <h3>&copy Site desenvolvido por <a href="https://github.com/carloseduneves" target="_blank">Carlos Neves</a></h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
