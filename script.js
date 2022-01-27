@@ -17,9 +17,16 @@ function operar(){
     if(IMC >= 18.5 && IMC <= 24){
         resposta2.innerText = `Parabéns! Isso é um bom sinal de que você está saudável e dentro da sua margem de peso ideal, no entanto, consulte um médico regularmente.`
     } else if(IMC <= 18 ){
-        resposta2.innerText = ` Você está abaixo do peso, procure um médico.`
+        if(IMC == 17){
+            resposta2.innerText = ` Você está abaixo do peso, procure um médico.`
+        }else if(IMC < 17){
+            resposta2.innerText = ` Você está muito abaixo do peso, procure um médico o quanto antes, pois você está a beira da desnutrição.`
+        }
     } else{
-        resposta2.innerText = `Você está com sobrepeso. Procure acompanhamento médico.`
+        if(IMC >= 25 && IMC <= 27){resposta2.innerText = `Você está com sobrepeso. Procure acompanhamento médico.`
+        }else{
+            resposta2.innerText = ` Você está muito acima do seu peso ideal. Procure um especialista imediatamente para iniciar um tratamento.`
+        }
     } 
     if (Altura == 0 || Peso == 0){
         window.alert('Digite números válidos nos campos "Altura" e "Peso" abaixo.')
