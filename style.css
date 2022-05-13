@@ -71,7 +71,6 @@ body{
 }
 header{
     width: 100vw;
-    height: 150px;
     background-color: var(--cor5);
     text-align: center;
 }
@@ -127,10 +126,12 @@ h2{
 h1{
     color: white;
     font-size: 5vw;
+    padding: 20px;
 }
 header > p{
     color: white;
     font-size: 0,5em;
+    position: fixed;
 }
 .título2{
     font-size: 2em;
